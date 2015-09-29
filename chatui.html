@@ -1,0 +1,89 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <style type="text/css">
+      .list{background-color: #EEEEF1}
+      .card{box-shadow: none; background-color: transparent;}
+      .chatleft .chat{float:left;}
+      .chatright .chat{float:right;}
+      .chat-profile{margin-right:10px;margin-left:10px;}
+      .chat-profile img{width:64px;height:64px;}
+      .chatleft .chat-left-l{width:14px;background:url(img/chat-left-normal.png)left center no-repeat;}
+      .chatleft .chat-left-m{width:auto;background-color:white; padding:8px;}
+      .chatleft .chat-left-r{width:4px;background:url(img/chat-left-normal.png)right center no-repeat;}
+      
+      .chatright .chat-left-r{width:4px;background:url(img/chat-right-normal.png)left center no-repeat;}
+      .chatright .chat-left-m{width:auto;background-color:#AFF464; padding:8px;}
+      .chatright .chat-left-l{width:14px;background:url(img/chat-right-normal.png)right center no-repeat;}
+    </style>
+    <script type="text/javascript">
+      function resizeChat(){
+        var l = document.getElementsByClassName("chat-left-l");
+        var m = document.getElementsByClassName("chat-left-m");
+        var r = document.getElementsByClassName("chat-left-r");
+        for(var i = 0; i < l.length; i++){
+          var totalWidth = window.innerWidth;
+          var textWidth = m[i].clientWidth;
+          if(textWidth > totalWidth - 130){
+            m[i].style.width = (totalWidth - 130)+"px";
+          }
+          
+          l[i].style.height = m[i].clientHeight + "px";
+          r[i].style.height = m[i].clientHeight + "px";
+        }
+      }
+    </script>
+  </head>
+
+  <body onresize="resizeChat()" onload="resizeChat()">
+    <div class="list">
+		  <div class="card chatleft">
+         <div class="chat chat-profile">
+           <img src="img/chat-profile.png" alt="" />
+         </div>
+         <div class="chat">
+           <div class="chat chat-left-l">&nbsp;</div>
+           <div class="chat chat-left-m">滹沱河偶尔微软看个人快高考爱书人狗肉馆热情和热情和</div>
+           <div class="chat chat-left-r">&nbsp;</div>
+         </div>
+		  </div>
+      <div class="card chatleft">
+         <div class="chat chat-profile">
+           <img src="img/chat-profile.png" alt="" />
+         </div>
+         <div class="chat">
+           <div class="chat chat-left-l">&nbsp;</div>
+           <div class="chat chat-left-m">jhjerjgeqjrgj</div>
+           <div class="chat chat-left-r">&nbsp;</div>
+         </div>
+		  </div>
+      <div class="card chatright">
+        <div class="chat chat-profile">
+           <img src="img/chat-profile.png" alt="" />
+         </div>
+         <div class="chat">
+           <div class="chat chat-left-l">&nbsp;</div>
+           <div class="chat chat-left-m">附件健康卡领导来了</div>
+           <div class="chat chat-left-r">&nbsp;</div>
+         </div>
+		  </div>
+      <div class="card chatright">
+        <div class="chat chat-profile">
+           <img src="img/chat-profile.png" alt="" />
+         </div>
+         <div class="chat">
+           <div class="chat chat-left-l">&nbsp;</div>
+           <div class="chat chat-left-m">多个很热情获取热河清河区好hhtrjwtj77lyBQQETHHHDAGARSGf更丰富发</div>
+           <div class="chat chat-left-r">&nbsp;</div>
+         </div>
+		  </div>
+	  </div>
+  </body>
+  </html>
+   
